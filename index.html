@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>???</title>
-    <link rel="stylesheet" href="src/styles/main.css" />
-    <link rel="stylesheet" href="src/styles/project.css" />
-  </head>
 
-  <body>
-    <main></main>
-    <canvas
-      id="c"
-      data-gradient="wrapper"
-      data-multx="2"
-      data-multy="2"
-      data-hue="180"
-      data-brightness=".8"
-      data-mouse="-1"
-      data-scale="1"
-      data-scale2="3"
-      data-noise="1.5"
-      data-time=".2"
-      data-bw=".0"
-      data-bw2=".5"
-      data-red="0.00"
-      data-green="0.33"
-      data-blue="0.88"
-      data-red2="1.00"
-      data-green2="0.0"
-      data-blue2="0.0"
-      data-callback="true"
-    >
-    </canvas>
+<head>
+  <meta charset="utf-8" />
+  <title>Andy Crawford Art</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <link rel="stylesheet" href="src/styles/project.css" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/masks.edges.min.css" />
+</head>
 
-    <script src="src/app.js" type="module"></script>
-  </body>
+<body>
+  <aside>
+    <nav>
+      <ul class="links">
+        <li class="link home">Andy Crawford Art</li>
+        <span class="wrap">
+          <li class="link">Queer Discount</li>
+          <li class="link">Links</li>
+          <li class="link">events</li>
+          <li class="link">portfolio</li>
+          <li class="link">about</li>
+          <li class="link">store</li>
+        </span>
+        <li class="link cart">cart</li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <div class="hero">
+      <h1>The Queer Discount</h1>
+      <canvas id="c" data-gradient="wrapper" data-multx="2" data-multy="2" data-hue="180" data-brightness=".66"
+        data-mouse="-1" data-scale="1" data-scale2="3" data-noise="1.5" data-time=".2" data-bw=".0" data-bw2=".25"
+        data-red="0.83" data-green="0.01" data-blue="0.43" data-red2="0" data-green2="0.22" data-blue2="0.66"
+        data-callback="true">
+      </canvas>
+    </div>
+    <div class="content">
+      <h2>What is the queer discount?</h2>
+      <p>I offer queer clientele discounted prices on both tattoos and merchandise.</p>
+      <h2>How does it work?</h2>
+      <p>Members of the queer community are charged a discounted hourly rate for one-session pieces, or a discounted
+        flat
+        session fee for multi-session projects.</p>
+      <p>Additionally, you can enter code "queerdiscount" for 10% off any item in my online shop and etsy store</p>
+    </div>
+  </main>
 
-  <!-- <script>
+  <script src="src/app.js" type="module"></script>
+</body>
+<!-- <script>
     window.addEventListener("gradientReady", () => {
       console.log("ready! in window");
 
@@ -47,6 +60,7 @@
       });
     });
   </script> -->
+
 </html>
 
 <!--
