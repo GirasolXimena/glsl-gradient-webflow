@@ -1,4 +1,4 @@
-import { resizeCanvasToDisplaySize } from "twgl.js";
+// import { resizeCanvasToDisplaySize } from "twgl.js";
 import Scroll from "./utils/scroll.js";
 import Camera from "./camera.js";
 import Scene from "./scene";
@@ -51,7 +51,7 @@ export default class {
   }
 
   resize() {
-    resizeCanvasToDisplaySize(this.gl.canvas, this.gl.vp.dpr);
+    // resizeCanvasToDisplaySize(this.gl.canvas, this.gl.vp.dpr);
 
     // viewport data
     this.gl.vp = {
