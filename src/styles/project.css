@@ -1,0 +1,71 @@
+.hero {
+  outline: 1px solid red;
+  position: relative;
+  height: 33vmin;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  clip-path: polygon(100% 0%, 0% 0% , 0.00% 100.00%, 3.33% 99.74%, 6.67% 98.99%, 10.00% 97.80%, 13.33% 96.27%, 16.67% 94.51%, 20.00% 92.66%, 23.33% 90.87%, 26.67% 89.26%, 30.00% 87.96%, 33.33% 87.08%, 36.67% 86.69%, 40.00% 86.80%, 43.33% 87.42%, 46.67% 88.49%, 50.00% 89.94%, 53.33% 91.65%, 56.67% 93.49%, 60.00% 95.31%, 63.33% 96.99%, 66.67% 98.38%, 70.00% 99.38%, 73.33% 99.92%, 76.67% 99.95%, 80.00% 99.47%, 83.33% 98.51%, 86.67% 97.16%, 90.00% 95.51%, 93.33% 93.70%, 96.67% 91.85%, 100.00% 90.12%);
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+.content {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 1.5em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+nav > .links {
+  margin: 0.66em 0.33em;
+  min-height: 10vmin;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+nav {
+  border-bottom: 0.25em solid var(--bi-purple);
+}
+
+h2:hover, .link:hover {
+  text-shadow: -3px 1px 2px var(--bi-pink), 3px -2px 2px var(--bi-purple), 2px -2px 3px var(--bi-blue);
+}
+
+h2:hover {
+  text-decoration: underline var(--bi-blue);
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: overline var(--bi-pink);
+}
+
+.links .wrap {
+  /* flex-basis: 50%; */
+  flex: 1 1 0;
+  display: flex;
+  column-gap: 1em;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.link.home, .link.cart {
+  font-size: 1.33em;
+  flex: 0.25 1 max-content;
+  text-align: center;
+
+}
