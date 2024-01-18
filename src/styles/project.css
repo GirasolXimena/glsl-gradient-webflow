@@ -53,8 +53,8 @@ nav {
 }
 
 h2:hover, .link:hover {
-  color: var(--dark);
-  text-shadow: -3px 1px 2px var(--bi-pink), 3px -2px 2px var(--bi-purple), 2px -2px 3px var(--bi-blue);
+  color: var(--bi-pink);
+  text-shadow: 2px 0px 2px var(--bi-purple), -2px 0px 2px var(--bi-blue);
 }
 
 h2:hover {
