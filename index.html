@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://unpkg.com/open-props/masks.edges.min.css" />
 </head>
 
-<body>
+<body data-theme="minimal">
   <aside>
     <nav>
       <ul class="links">
@@ -54,19 +54,29 @@
       <p>Additionally, you can enter code "queerdiscount" for 10% off any item in my online shop and etsy store</p>
     </div>
   </main>
-
+  <fieldset id="theme-toggle" data-theme="minimal">
+    <legend>Select active theme</legend>
+    <div>
+    <input type="radio" name="theme" id="minimal" value="minimal" checked />
+      <label for="minimal">Minimal</label>
+    </div>
+    <div>
+      <input type="radio" name="theme" id="retro" value="retro" />
+      <label for="retro">Retro</label>
+    </div>
+  </fieldset>
   <script src="src/app.js" type="module"></script>
 </body>
-<!-- <script>
+<script>
     window.addEventListener("gradientReady", () => {
       console.log("ready! in window");
+      const themeToggle = document.getElementById('theme-toggle')
+      const setTheme = (e) => document.body.setAttribute('data-theme', e.target.value)
+      console.log(window.Gradient)
 
-      document.addEventListener("click", () => {
-        console.log(window.app);
-        // window.gradient.invert();
-      });
+      themeToggle.addEventListener("change", setTheme, false)
     });
-  </script> -->
+  </script>
 
 </html>
 
