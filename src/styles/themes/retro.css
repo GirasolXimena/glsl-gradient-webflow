@@ -1,0 +1,60 @@
+body[data-theme="retro"] {
+  margin: 1.5em 1em;
+  .links, .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .links {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+  }
+  .home {
+    position: relative;
+    padding: 1em 0.5em;
+    flex-basis: 100%;
+    font-size: 200%;
+    /* background-size: 200% 200%; */
+    /* background-position: 0% 90%; */
+    /* background-color: orange; */
+    /* overflow: hidden; */
+    /* height: 320px; */
+    /* width: 320px; */
+    background: repeating-linear-gradient(transparent 0 10px, black 14px),
+      radial-gradient(
+        80px 80px at 50% 50%,
+        var(--bi-blue),
+        var(--bi-purple),
+        var(--bi-pink)
+      );
+    /* border-radius: 50%; */
+    background-size: 100% 200%, 50% 100%;
+    background-repeat: repeat-y, no-repeat;
+    background-position-y: 20%, center;
+    background-position-x: center, center;
+    animation: rise 6s linear infinite;
+
+  }
+  
+  
+
+  @media (prefers-reduced-motion: no-preference) {
+    .home {
+      will-change: transform;
+    }
+  }
+
+  .cart {
+    margin-left: auto;
+  }
+}
+
+@keyframes rise {
+  from {
+    background-position-y: 10%, center;
+  }
+  to {
+    background-position-y: 50%, center;
+  }
+}

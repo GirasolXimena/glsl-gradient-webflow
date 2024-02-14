@@ -1,2 +1,2 @@
-@import url('retro.css');
-@import url('minimal.css');
+@import url('./themes/retro.css');
+@import url('./themes/minimal.css');
