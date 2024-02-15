@@ -1,0 +1,157 @@
+
+* {
+  margin:0;
+  padding:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+canvas {
+  display:block;
+}
+
+#c {
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+/* Project Styles */
+
+#content {
+  /* border: 3px solid red; */
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+
+.placeh{
+  border: 2px solid white;
+  margin: 10vw;
+  width: 300px;
+  height: 300px;
+
+}
+
+
+
+
+/* NOTES ***************************************************************
+
+
+*/
+@font-face {
+  font-family: 'something-unfriendly';
+  src: url('/assets/something-unfriendly-210bb597.otf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at center, rgb(70, 1, 1) 33%, black);
+}
+
+h1 {
+  position: absolute;
+  font-family: 'something-unfriendly';
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  font-size: 1.75em;
+  letter-spacing: -0.8em;
+  padding: 1em 0 1em;
+  line-height: 1.5em;
+  left: 10%;
+  top: 0;
+  z-index: 20;
+  padding-block: 0.5em;
+  padding-inline: 1.75em;
+ }
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 87%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.color-burn {
+  mix-blend-mode: lighten;
+}
+
+.color-lighten {
+  mix-blend-mode: difference;
+}
+
+#container {
+  background-color: black;
+  cursor: pointer;
+  position: relative;
+  border: 1.5em double red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 900px;
+  width: 600px;
+}
+
+#canvas, #viz {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 87%;
+  transform: translate(-50%, -50%);
+}
+
+#c {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border: 3.5em solid black;
+}
+
+#canvas {
+  mask-image: url(/assets/medusa-outline-eaebfdcd.png);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#squat {
+  display: none;
+}
+
+#outline {
+  z-index: 1;
+}

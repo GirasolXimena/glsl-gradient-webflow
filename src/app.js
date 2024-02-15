@@ -1,4 +1,5 @@
 import Gl from "./modules/gl/gl.js";
+import './modules/audio-motion.js'
 
 export class App {
   constructor() {

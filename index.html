@@ -10,71 +10,46 @@
 
   <body>
     <main>
-      <audio id="audio" src="src/assets/audio.ogg"></audio>
-      <canvas id="canvas"></canvas>
-      <h1>Medusa</h1>
-    
-      <!-- <img src="assets/medusa.jpg" alt="medusa"> -->
-      <img id="border" src="src/assets/border.png" alt="border">
+      <audio id="audio" src="src/assets/audio.mp3"></audio>
+      
       <div id="container">
-        <img class="color-burn" id="hair" src="src/assets/hair.png" alt="hair">
-      </div>
-      <img id="outline" src="src/assets/outline.png" alt="outline">
-      <img class="color-burn" id="dress" src="src/assets/skirt.png" alt="dress">
-      <img class="color-burn" id="shirt" src="src/assets/shirt.png" alt="shirt">
-      <img id="arm" src="src/assets/arm.png" alt="arm">
-      <img id="face" src="src/assets/face.png" alt="face">
-    </main>
-    <canvas
-      id="c"
-      data-gradient="wrapper"
-      data-multx="2"
-      data-multy="2"
-      data-hue="180"
-      data-brightness=".8"
-      data-mouse="-1"
-      data-scale="1"
-      data-scale2="3"
-      data-noise="1.5"
-      data-time=".2"
-      data-bw=".0"
-      data-bw2=".5"
-      data-red="0.00"
-      data-green="0.33"
-      data-blue="0.88"
-      data-red2="1.00"
-      data-green2="0.0"
-      data-blue2="0.0"
-      data-callback="true"
-    >
-    </canvas>
+        <h1 class="color-burn">Medusa</h1>
+        <canvas
+        id="c"
+        data-gradient="wrapper"
+        data-multx="2"
+        data-multy="2"
+        data-hue="180"
+        data-brightness=".8"
+          data-mouse="-1"
+          data-scale="1"
+          data-scale2="3"
+          data-noise="1.5"
+          data-time=".2"
+          data-bw=".0"
+          data-bw2=".5"
+          data-red="0.00"
+          data-green="0.33"
+          data-blue="0.88"
+          data-red2="1.00"
+          data-green2="0.0"
+          data-blue2="0.0"
+          data-callback="true"
+          >
+        </canvas>
+        <canvas id="canvas">
+        </canvas>
 
+        <img class="color-lighten" id="hair" src="src/assets/hair.png" alt="hair">
+        <img  id="outline" src="src/assets/outline.png" alt="outline">
+        <img class="color-burn" id="dress" src="src/assets/skirt.png" alt="dress">
+        <img id="shirt" src="src/assets/shirt.png" alt="shirt">
+        <img id="arm" src="src/assets/arm.png" alt="arm">
+        <img id="face" src="src/assets/face.png" alt="face">
+        <img id="squat" src="src/assets/squat.png" alt="">
+      </div>
+    </main>
     <script src="src/app.js" type="module"></script>
   </body>
-
-  <!-- <script>
-    window.addEventListener("gradientReady", () => {
-      console.log("ready! in window");
-
-      document.addEventListener("click", () => {
-        console.log(window.app);
-        // window.gradient.invert();
-      });
-    });
-  </script> -->
 </html>
 
-<!--
-
-
-
-  const float MULT_X = .2;
-const float MULT_Y = .8;
-const float HUE = 0.; // 0 / 360
-const float BRIGHTNESS = .8;
-const float MOUSE_BRIGHTNESS = -1.; // -1 / 1 -- -1 being black and 100% power
-const float SCALE = 2.;
-const float NOISE_FACTOR = 1.;
-
-
--->
