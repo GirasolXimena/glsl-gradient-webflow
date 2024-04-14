@@ -31,12 +31,13 @@ body[data-theme="minimal"] {
       filter: blur(1px);
       background-image: linear-gradient(to bottom, var(--bi-blue), var(--bi-purple), var(--bi-pink));
     }
-
+    
     &::before {
       background-image: repeating-linear-gradient(transparent,
-          transparent 10px,
-          black 10px,
-          black 20px);
+      transparent 10px,
+      black 10px,
+      black 20px);
+      z-index: 2;
       clip-path: rect(50% 100% 100% 0%);
       animation: mymove 45s linear infinite;
 
