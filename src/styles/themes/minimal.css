@@ -98,6 +98,10 @@ body[data-theme="minimal"] {
     font-weight: 700;
   }
 
+  .link {
+    padding: 0.125em 0.25em;
+  }
+
   nav {
     border-bottom: 0.25em solid var(--bi-blue);
   }
@@ -131,7 +135,6 @@ body[data-theme="minimal"] {
   .link.home,
   .link.cart {
     font-size: 1.33em;
-    flex: 0.25 1 max-content;
     text-align: center;
     align-self: flex-start;
 
