@@ -14,38 +14,36 @@ body[data-theme="minimal"] {
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(to top, var(--bi-blue) 25%, var(--bi-purple) 75%, var(--bi-pink));
-    
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      height: min(50vw, 320px);
-      width: min(50vw, 320px);
-    }
-    
-    &::after {
-      filter: blur(1px);
-      background-image: linear-gradient(to bottom, var(--bi-blue), var(--bi-purple), var(--bi-pink));
-    }
-    
-    &::before {
-      background-image: repeating-linear-gradient(transparent,
-      transparent 10px,
-      black 10px,
-      black 20px);
-      z-index: 2;
-      clip-path: rect(50% 100% 100% 0%);
-      animation: mymove 45s linear infinite;
-
-      background-size: 100% 50%;
-    }
-
   }
 
+  .hero::before,
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: min(50vw, 320px);
+    width: min(50vw, 320px);
+  }
+
+  .hero::after {
+    filter: blur(1px);
+    background-image: linear-gradient(to bottom, var(--bi-blue), var(--bi-purple), var(--bi-pink));
+  }
+
+  .hero::before {
+    background-image: repeating-linear-gradient(transparent,
+        transparent 10px,
+        black 10px,
+        black 20px);
+    z-index: 2;
+    clip-path: rect(50% 100% 100% 0%);
+    animation: mymove 45s linear infinite;
+
+    background-size: 100% 50%;
+  }
 
 
   canvas,
