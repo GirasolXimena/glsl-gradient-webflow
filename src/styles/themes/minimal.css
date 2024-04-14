@@ -13,20 +13,21 @@ body[data-theme="minimal"] {
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
+    
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      height: min(50vw, 320px);
+      width: min(50vw, 320px);
+    }
     background-image: linear-gradient(to top, var(--bi-blue) 25%, var(--bi-purple) 75%, var(--bi-pink));
   }
-
-  .hero::before,
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    height: min(50vw, 320px);
-    width: min(50vw, 320px);
-  }
+  
 
   .hero::after {
     filter: blur(1px);
@@ -46,8 +47,8 @@ body[data-theme="minimal"] {
   }
 
 
-  canvas,
-  svg {
+  :is(canvas),
+  :is(svg) {
     display: block;
   }
 
@@ -59,7 +60,7 @@ body[data-theme="minimal"] {
   }
 
 
-  h1 {
+  :is(h1) {
     font-size: 3.5em;
     font-weight: 700;
     width: 100%;
@@ -72,7 +73,7 @@ body[data-theme="minimal"] {
     margin: 0 auto;
   }
 
-  h2 {
+  :is(h2) {
     margin: 1.5em 0;
   }
 
@@ -80,7 +81,7 @@ body[data-theme="minimal"] {
     margin-top: 0;
   }
 
-  p {
+  :is(p) {
     margin: 1em 0;
   }
 
