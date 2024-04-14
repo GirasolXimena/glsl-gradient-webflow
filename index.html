@@ -61,15 +61,11 @@
       <label for="retro">Retro</label>
     </div>
   </fieldset>
-  <script src="src/app.js" type="module"></script>
 </body>
 <script>
-    window.addEventListener("gradientReady", () => {
-      console.log("ready! in window");
+    window.addEventListener("load", () => {
       const themeToggle = document.getElementById('theme-toggle')
       const setTheme = (e) => document.body.setAttribute('data-theme', e.target.value)
-      console.log(window.Gradient)
-
       themeToggle.addEventListener("change", setTheme, false)
     });
   </script>
