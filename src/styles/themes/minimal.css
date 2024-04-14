@@ -13,36 +13,37 @@ body[data-theme="minimal"] {
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      height: min(50vw, 320px);
-      width: min(50vw, 320px);
-    }
     background-image: linear-gradient(to top, var(--bi-blue) 25%, var(--bi-purple) 75%, var(--bi-pink));
   }
-  
 
-  .hero::after {
-    filter: blur(1px);
+  .sun, .road {
+    position: absolute;
+  }
+  
+  .sun {
     background-image: linear-gradient(to bottom, var(--bi-blue), var(--bi-purple), var(--bi-pink));
+    transform: translate(-50%, -50%);
+    width: min(50vw, 320px);
+    height: min(50vw, 320px);
+    filter: blur(1px);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
   }
 
-  .hero::before {
+  .road {
     background-image: repeating-linear-gradient(transparent,
         transparent 10px,
         black 10px,
         black 20px);
     z-index: 2;
-    clip-path: rect(50% 100% 100% 0%);
+    height: 50%;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    width: 100%;
     animation: mymove 45s linear infinite;
-
     background-size: 100% 50%;
   }
 
