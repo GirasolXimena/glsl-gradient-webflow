@@ -53,21 +53,21 @@
   <fieldset id="theme-toggle" data-theme="minimal">
     <legend>Select active theme</legend>
     <div>
-    <input type="radio" name="theme" id="minimal" value="minimal" />
-      <label for="minimal">Minimal</label>
-    </div>
-    <div>
       <input type="radio" name="theme" id="retro" value="retro" checked />
       <label for="retro">Retro</label>
+    </div>
+    <div>
+      <input type="radio" name="theme" id="minimal" value="minimal" />
+      <label for="minimal">Minimal</label>
     </div>
   </fieldset>
 </body>
 <script>
-    window.addEventListener("load", () => {
-      const themeToggle = document.getElementById('theme-toggle')
-      const setTheme = (e) => document.body.setAttribute('data-theme', e.target.value)
-      themeToggle.addEventListener("change", setTheme, false)
-    });
-  </script>
+  window.addEventListener("load", () => {
+    const themeToggle = document.getElementById('theme-toggle')
+    const setTheme = (e) => document.body.setAttribute('data-theme', e.target.value)
+    themeToggle.addEventListener("change", setTheme, false)
+  });
+</script>
 
 </html>
