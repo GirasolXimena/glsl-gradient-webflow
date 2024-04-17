@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Yellowtail&family=Press+Start+2P&display=swap");
 
 body[data-theme="retro"] {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.25), transparent), url(../../together.png);
+  background-size: cover;
   --hover-box-shadow:
     -2px -2px 5px var(--bi-blue),
     0px 3px 5px var(--bi-purple),
@@ -16,7 +18,6 @@ body[data-theme="retro"] {
     position: relative;
     overflow: hidden;
     z-index: 2;
-    background-image: linear-gradient(to top, var(--bi-blue) 25%, var(--bi-purple) 75%, var(--bi-pink));
     
   }
 
@@ -32,6 +33,16 @@ body[data-theme="retro"] {
     mask-size: 10% 10%;
     mask-repeat: repeat;
   }
+  .hero::before {
+    position: absolute;
+    left: -30%;
+    right: -30%;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background-image: linear-gradient(to top, var(--bi-blue) 25%, var(--bi-purple) 75%, var(--bi-pink));
+    opacity: 0.5;
+  }
 
   .sun,
   .road {
@@ -40,7 +51,6 @@ body[data-theme="retro"] {
 
   main {
     position: relative;
-    background-color: rebeccapurple;
     overflow: hidden;
     z-index: 0;
     display: flex;
