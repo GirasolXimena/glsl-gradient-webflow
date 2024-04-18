@@ -28,10 +28,12 @@ body[data-theme="retro"] {
     top: 0;
     bottom: 0;
     content: "";
-    background-image: linear-gradient(to bottom, white, lavender, pink, cyan, white);
-    mask: linear-gradient(black 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px)), linear-gradient(90deg, #1c7cbb 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px));
-    mask-size: 10% 10%;
-    mask-repeat: repeat;
+    /* background-image: linear-gradient(to bottom, white, lavender, pink, cyan, white); */
+    /* mask: linear-gradient(black 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px)), linear-gradient(90deg, #1c7cbb 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px)); */
+    /* mask-size: 50px 0px; */
+    /* mask-repeat: repeat; */
+    /* background-repeat: repeat-x; */
+    background-position-x: 40%;
   }
   .hero::before {
     position: absolute;
@@ -69,6 +71,9 @@ body[data-theme="retro"] {
     mask-size: 10% 10%;
     transform: perspective(500px) rotateX(65deg);
     mask-repeat: repeat;
+    background-repeat: repeat;
+    background-size: 100% 20%;
+    background-position-y: 10%;
     z-index: -1;
   }
 
@@ -96,7 +101,7 @@ body[data-theme="retro"] {
     width: 100%;
     left: 0;
     width: 100%;
-    animation: mymove 45s linear infinite;
+    animation: mymove 30s linear infinite;
     background-size: 100% 50%;
   }
 
@@ -128,12 +133,16 @@ body[data-theme="retro"] {
       white,
       darkmagenta 60%,
       cornflowerblue 100%
-    ), linear-gradient(to bottom, transparent, rgba(0,0,0,0.66) 50%);
+    );
     -webkit-text-stroke: 0.1px dimgray;
     background-size: 100% 1.125em, auto;
     background-repeat: repeat-y, repeat;
     background-clip: text, border-box;
     color: transparent;
+    box-shadow: var(--hover-box-shadow);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.25em 0.5em;
   }
 
   .content {
